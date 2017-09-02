@@ -1,0 +1,51 @@
+<html>
+<head>
+<script type="text/javascript" src="application.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+
+        <input type="checkbox" id="m-f"> Max at level 1 <br>
+        <input type="checkbox" id="adv-r" value="advl-rule"> Adventure league rule <br>
+        <input type="checkbox" id="avg-rule"> Average roll
+    </div>
+
+    <div classs="box">
+        <input type="checkbox" id="r-f"> Bonus hp from racial feature (eg: stout halfling, hill dwarf) <br>
+        <input type="checkbox" id="c-f"> Bonus hp from class feature (eg: draconic sorcerer ) <br>
+        <input type="checkbox" id="f" value="bonus-feat"> Bonus hp from feat (eg: toughness ) <br>
+    </div>
+
+    <div class="box">
+        <br>
+        <label for="HitDie">Hit Die: </label>
+        <select name="HitDie" id="htd">
+          <option value="4">d4</option>
+          <option value="6">d6</option>
+          <option value="8">d8</option>
+          <option value="10">d10</option>
+          <option value="12">d12</option>
+        </select>
+    </div>
+
+    <div class="box">
+        <input type="text" id="ConScore" value="10"> Constitution Score <br>
+        <input type="text" id="lev" value="1"> Level <br>
+    </div>
+
+    <div class="box">
+        <button id="button" onclick="getHp()">Get HP</button> <br>
+    </div>
+
+    <div class="box">
+        <label for="hp">Hit Points: </label>
+        <span id="hp"></span>
+    </div>
+
+<script>
+
+</script>
+</body>
+</html>
