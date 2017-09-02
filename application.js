@@ -100,7 +100,7 @@ function getHp() {
       new_hp = new_hp + level
     }
     if (feat==true) {
-      new_hp = new_hp + level
+      new_hp = new_hp + 2*level
     }
 
     //window.alert("Avg : " + average_rule + " Max : " + standard)
