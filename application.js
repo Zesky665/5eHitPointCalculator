@@ -1,11 +1,8 @@
 function getConMod(val){
   if (val%2 == 1){
-    mod = val - 1
-  }else{
-    mod = val
+    val = val - 1
   }
-
-    switch(mod){
+    switch(val){
       case 0:
         return -5;
       break;
