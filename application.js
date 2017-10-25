@@ -1,51 +1,56 @@
 function getConMod(val){
+  if (val%2 == 1){
+    mod = val - 1
+  }else{
+    mod = val
+  }
 
-    switch(val){
-      case 1:
+    switch(mod){
+      case 0:
         return -5;
       break;
 
-      case 2 || 3:
+      case 2:
         return -4;
       break;
 
-      case 4 || 5:
+      case 4:
         return -3;
       break;
 
-      case 6 || 7:
+      case 6:
         return -2;
       break;
 
-      case 8 || 9:
+      case 8:
         return -1;
       break;
 
-      case 10 || 11:
+      case 10:
         return 0;
       break;
 
-      case 12 || 13:
+      case 12:
         return 1;
       break;
 
-      case 14 || 15:
+      case 14:
         return 2;
       break;
 
-      case 16 || 17:
+      case 16:
         return 3;
       break;
 
-      case 18 || 19:
+      case 18:
         return 4;
       break;
 
-      case 20 || 21:
+      case 20:
         return 5;
       break;
 
-      case 22 || 23:
+      case 22:
         return 6;
       break;
 
@@ -100,7 +105,7 @@ function getHp() {
       new_hp = new_hp + level
     }
     if (feat==true) {
-      new_hp = new_hp + 2*level
+      new_hp = new_hp + level
     }
 
     //window.alert("Avg : " + average_rule + " Max : " + standard)
