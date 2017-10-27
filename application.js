@@ -71,7 +71,6 @@ function getHp() {
     var hp = document.getElementById('hp').value;
     var new_hp = parseInt(hp,10);
     var standard = document.getElementById('m-f').checked;
-    var adventure_rule = document.getElementById('adv-r').value;
     var average_rule = document.getElementById('avg-rule').checked;
     var racial_feature = document.getElementById('r-f').checked;
     var class_feature = document.getElementById('c-f').checked;
